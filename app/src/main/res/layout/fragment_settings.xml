@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingsFragment" >
+
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        android:id="@+id/ToggleTTNotify"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:minHeight="48dp"
+        android:text="Timetable Notification Reminder" />
+
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        android:id="@+id/ToggleTSNotify"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ToggleTTNotify"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:minHeight="48dp"
+        android:text="Task Notification Reminder" />
+
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        android:id="@+id/ToggleDarkMode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ToggleTSNotify"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:minHeight="48dp"
+        android:text="Dark Mode" />
+</RelativeLayout>

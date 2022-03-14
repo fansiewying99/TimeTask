@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/calendar_frag"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".CalendarFragment">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/calendar_add_task_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="16dp"
+        android:contentDescription="Add"
+        android:src="@android:drawable/ic_input_add" />
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+
+        <!--<com.applikeysolutions.cosmocalendar.view.CalendarView
+            android:id="@+id/cosmo_calendar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:selectedDayTextColor="@color/design_default_color_primary"
+            app:selectionType="multiple"
+            app:orientation="horizontal" />
+
+        <com.skyhope.eventcalenderlibrary.CalenderEvent
+            android:id="@+id/calender_event"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <CalendarView
+            android:id="@+id/calendarView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />-->
+        <!--<sun.bob.mcalendarview.MCalendarView
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+
+            tools:context=".MainActivity"
+            android:id="@+id/calendar"
+            />-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp">
+
+            <!--<Button
+                android:id="@+id/prev_month_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="?android:attr/panelBackground"
+
+                android:textColor="@color/black"
+                app:icon="@drawable/ic_arrow_left"
+                app:iconGravity="textEnd"
+                app:iconTint="#000000" />-->
+            <TextView
+                android:id="@+id/current_view_month"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="textEnd"
+                android:textSize="15sp"
+                android:layout_weight="1"/>
+            <TextView
+                android:id="@+id/current_view_year"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="textStart"
+                android:textSize="15sp"
+                android:layout_weight="1"/>
+
+            <!--<Button
+                android:id="@+id/next_month_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="?android:attr/panelBackground"
+                android:isScrollContainer="false"
+                android:textColor="@color/black"
+                app:icon="@drawable/ic_arrow_right"
+                app:iconGravity="textStart"
+                app:iconTint="#000000" />-->
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="5dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:layout_height="wrap_content"
+                android:text="SUN" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="MON" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="TUE" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="WED" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="THU" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="FRI" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="SAT" />
+        </LinearLayout>
+
+        <sun.bob.mcalendarview.views.ExpCalendarView
+            android:id="@+id/calendar_exp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:context=".MainActivity" />
+        <!-- <sun.bob.mcalendarview.MCalendarView
+             android:id="@+id/calendar_view"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             tools:context=".MainActivity"
+             />-->
+        <ImageButton
+            android:id="@+id/trigger_expand_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/arrow_up_float" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/calendar_tasks_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:scrollbars="vertical" />
+        
+        <!--<ListView
+             android:id="@+id/task_list"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent" />-->
+
+
+         <!--<TextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="Task 1"
+         />-->
+
+
+
+     </LinearLayout>
+
+ </FrameLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tag name"
+        android:id="@+id/tagName"
+        android:textSize="16dp"
+        android:layout_marginVertical="20dp"
+        android:layout_marginLeft="30dp"
+        />
+
+    <com.google.android.material.divider.MaterialDivider
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:dividerColor="#B5B5B8"
+        app:dividerInsetEnd="0dp"
+        app:dividerInsetStart="0dp"
+        app:dividerThickness="1.6dp"
+        />
+
+</LinearLayout>

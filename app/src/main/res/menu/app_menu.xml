@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@id/timetableFragment"
+        android:icon="@drawable/ic_timetable"
+        android:title="Timetable" />
+        
+    <item
+        android:id="@+id/calendarFragment"
+        android:icon="@drawable/ic_calendar"
+        android:title="Calendar" />
+
+    <item
+        android:id="@+id/tasksFragment"
+        android:icon="@drawable/ic_tasks"
+        android:title="Tasks" />
+
+    <item
+        android:id="@+id/tagsFragment"
+        android:icon="@drawable/ic_bookmark"
+        android:title="Tags" />
+
+    <item
+        android:id="@id/stopwatchFragment"
+        android:icon="@drawable/ic_stopwatch"
+        android:title="Stopwatch" />
+
+    <item
+        android:id="@id/timerFragment"
+        android:icon="@drawable/ic_timer"
+        android:title="Timer" />
+
+    <item
+        android:id="@id/settingsFragment"
+        android:icon="@drawable/ic_settings"
+        android:title="Settings" />
+
+    <item
+        android:id="@id/aboutFragment"
+        android:icon="@drawable/ic_about"
+        android:title="About App" />
+</menu>
